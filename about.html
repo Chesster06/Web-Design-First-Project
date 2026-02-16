@@ -7,28 +7,25 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* ===== BRAND STYLE: berdasarkan deskripsi image dan code diberi ===== */
         html, body {
             height: 100%;
             margin: 0;
             display: flex;
             flex-direction: column;
-            background-color: #006F77;      /* solid teal background */
+            background-color: #006F77;
             font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
         }
 
-        /* main content text colour: mostly white, some dark card text */
         main h1, main h2, main h3, main h4, main p.lead, main .section-title {
             color: white;
         }
 
         main p:not(.card-text), main li, main .alert, .list-group-item {
-            color: #f0f0f0;  /* light text on teal background */
+            color: #f0f0f0;
         }
 
-        /* card styling: latar belakang gelap lutsinar, sejajar hero-section */
         .card {
-            background-color: #00000059;  /* semi-transparent black */
+            background-color: #00000059;
             backdrop-filter: blur(2px);
             border: 1px solid rgba(255,255,255,0.1);
             color: white;
@@ -43,7 +40,6 @@
             color: #f5f5f5;
         }
 
-        /* list-group dalam card disesuaikan */
         .list-group-item {
             background-color: transparent !important;
             border-color: rgba(255,255,255,0.2);
@@ -98,7 +94,7 @@
         .team-card .display-6 {
             filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
         }
-        /* override bootstrap btn colours agar selari */
+
         .btn-primary, .btn-secondary {
             background-color: #b9b9b93d !important;
             border-color: #b9b9b9 !important;
@@ -110,7 +106,6 @@
             color: white;
         }
 
-        /* Hero section style (kalau ada) selaras */
         .hero-section {
             color: white;
             background-color: #00000059;
@@ -118,7 +113,6 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
-        /* text dalam card header */
         .card-header.bg-primary {
             background-color: #00000080 !important;
             border-bottom: 2px solid #ffc107;
@@ -134,13 +128,12 @@
 </head>
 <body>
     <header>
-                <!-- Header / Navbar -->
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #019faab2;">
                     <div class="container-fluid">
                         <a class="navbar-brand ms-auto" href="#"> 
                             <img src="images/kpt_icon.png" alt="Logo" class="logo">
                             <img src="images/logo_politeknik.png" alt="Logo" class="logo">
-                            <span class="navbar-name">POLITEKNIK SEBERANG PERAI</span>
+                            <span class="navbar-name">UPROP JTMK</span>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
@@ -156,13 +149,11 @@
                     </div>
                 </nav>
                 
-                <!-- Hamburger Toggle Button for Responsive -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <!-- Right side: Navigation Links -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -183,9 +174,7 @@
         </nav>
     </header>
 
-    <!-- MAIN CONTENT SECTION: About UPROP Page -->
     <main class="container my-4">
-        <!-- Page Header -->
         <div class="row mb-4">
             <div class="col-12">
                 <h1 class="section-title">Tentang UPROP</h1>
@@ -194,11 +183,7 @@
             </div>
         </div>
 
-        <!-- ============================================ -->
-        <!-- GRID SYSTEM REQUIREMENT 1: Two-Column Layout -->
-        <!-- ============================================ -->
         <div class="row g-4 mb-5">
-            <!-- COLUMN 1: Overview / Introductory Information about UPROP (4 columns) -->
             <div class="col-lg-4 col-md-12">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
@@ -206,7 +191,6 @@
                         <p class="fw-bold">UNIT PENGURUSAN PROJEK PELAJAR</p>
                         <p>Unit Pengurusan Projek Pelajar (UPROP) ialah unit yang ditubuhkan bagi mengurus pelaksanaan kursus <span class="fw-bold text-primary">Projek Akhir Pelajar</span> bagi program <span class="fw-bold">Diploma Teknologi Maklumat (Pembangunan Digital)</span>.</p>
                         <p>UPROP bertanggungjawab terhadap:</p>
-                        <!-- COMPONENT 2: List Group - Scope of Operations (dengan badge) -->
                         <div class="list-group mt-3">
                             <div class="list-group-item d-flex justify-content-between align-items-center">
                                 Penyediaan projek
@@ -229,14 +213,12 @@
                 </div>
             </div>
 
-            <!-- COLUMN 2: Detailed Information about Team Structure, Roles, Responsibilities (8 columns) -->
             <div class="col-lg-8 col-md-12">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
                         <h3 class="section-title">Struktur & Sokongan Pelaksanaan Projek Akhir</h3>
                         <p>UPROP berfungsi sebagai pusat penyelarasan bagi memastikan pelaksanaan Projek Akhir berjalan secara terancang dan konsisten.</p>
                         
-                        <!-- COMPONENT 4: Progress Bar - Visual representation of process status -->
                         <div class="mt-4 mb-4">
                             <div class="progress-label d-flex justify-content-between">
                                 <span class="fw-bold">Tahap sokongan proses (overview):</span>
@@ -249,7 +231,6 @@
                                 </div>
                             </div>
                             <div class="mt-3">
-                                <!-- COMPONENT 4: Alert - Good practices / highlighted information -->
                                 <div class="alert alert-info d-flex align-items-center mt-3" role="alert">
                                     <span class="fw-bold me-2">💡</span>
                                     <div><strong>Good Practice:</strong> UPROP berperanan sebagai <strong>satu sumber rujukan pusat</strong> bagi memastikan konsistensi proses sepanjang semester.</div>
@@ -257,7 +238,6 @@
                             </div>
                         </div>
                         
-                        <!-- COMPONENT 3: Badges - Highlight roles / key responsibilities -->
                         <div class="mt-3">
                             <span class="badge bg-warning text-dark p-2 me-2">Koordinasi</span>
                             <span class="badge bg-info text-dark p-2 me-2">Penyelarasan</span>
@@ -270,19 +250,14 @@
             </div>
         </div>
 
-        <!-- ============================================ -->
-        <!-- GRID SYSTEM REQUIREMENT 2: Multi-Column Layout for Team Presentation -->
-        <!-- ============================================ -->
         <h2 class="fw-bold mb-4 text-white">Struktur Team UPROP</h2>
         <div class="row g-4">
-            <!-- TEAM MEMBER 1: Coordinator -->
+            <!-- Coordinator -->
             <div class="col-md-6 col-lg-3">
-                <!-- COMPONENT 1: Card - Team roles and responsibilities -->
                 <div class="card h-100 shadow-sm border-0 team-card">
                     <div class="card-body text-center">
                         <div class="display-6 text-primary mb-3">👨‍💼</div>
                         <h5 class="card-title fw-bold">Penyelaras UPROP</h5>
-                        <!-- Badge Component -->
                         <span class="badge bg-primary mb-3">Ketua</span>
                         <p class="card-text text-start">
                             <strong>Peranan:</strong> Koordinasi, takwim dan pelaporan
@@ -291,19 +266,17 @@
                             <li class="mb-2"><span class="badge bg-success me-2">✓</span> Mengurus keseluruhan pelaksanaan projek</li>
                             <li class="mb-2"><span class="badge bg-success me-2">✓</span> Menyelaraskan standard eviden dan komunikasi rasmi</li>
                         </ul>
-                        <!-- Optional Button Component -->
                         <button class="btn btn-outline-primary btn-sm mt-2">Hubungi</button>
                     </div>
                 </div>
             </div>
             
-            <!-- TEAM MEMBER 2: Documentation & SOP -->
+            <!-- Documentation & SOP -->
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 shadow-sm border-0 team-card">
                     <div class="card-body text-center">
                         <div class="display-6 text-info mb-3">📋</div>
                         <h5 class="card-title fw-bold">Dokumentasi & SOP</h5>
-                        <!-- Badge Component -->
                         <span class="badge bg-info text-dark mb-3">Template</span>
                         <p class="card-text text-start">
                             <strong>Peranan:</strong> Template, borang dan audit eviden
@@ -317,13 +290,12 @@
                 </div>
             </div>
             
-            <!-- TEAM MEMBER 3: Monitoring & Review -->
+            <!-- Monitoring & Review -->
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 shadow-sm border-0 team-card">
                     <div class="card-body text-center">
                         <div class="display-6 text-warning mb-3">📊</div>
                         <h5 class="card-title fw-bold">Pemantauan & Semakan</h5>
-                        <!-- Badge Component -->
                         <span class="badge bg-warning text-dark mb-3">Milestone</span>
                         <p class="card-text text-start">
                             <strong>Peranan:</strong> Milestone dan semakan progres
@@ -337,13 +309,12 @@
                 </div>
             </div>
             
-            <!-- TEAM MEMBER 4: Presentation & Assessment -->
+            <!-- Presentation & Assessment -->
             <div class="col-md-6 col-lg-3">
                 <div class="card h-100 shadow-sm border-0 team-card">
                     <div class="card-body text-center">
                         <div class="display-6 text-danger mb-3">🎤</div>
                         <h5 class="card-title fw-bold">Pembentangan & Penilaian</h5>
-                        <!-- Badge Component -->
                         <span class="badge bg-danger mb-3">Panel</span>
                         <p class="card-text text-start">
                             <strong>Peranan:</strong> Slot, panel dan rubrik
@@ -358,7 +329,7 @@
             </div>
         </div>
 
-        <!-- SKOP OPERASI UPROP - Additional content using List Group and Badges -->
+        <!-- SKOP OPERASI UPROP -->
         <div class="row mt-5">
             <div class="col-12">
                 <div class="card border-0 shadow-sm">
@@ -368,7 +339,6 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <!-- List Group Component dengan badge bulat -->
                                 <div class="list-group">
                                     <div class="list-group-item d-flex align-items-center">
                                         <span class="badge bg-primary rounded-pill me-3">1</span>
@@ -399,11 +369,8 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="text-center mt-5">
-        <div class="text-center p-3">
-            © 2026 - Copyright : Jabatan Teknologi Maklumat dan Komunikasi Politeknik Seberang Perai
-        </div>
+        <div class="text-center p-3">© 2026 - Copyright : Jabatan Teknologi Maklumat dan Komunikasi Politeknik Seberang Perai</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

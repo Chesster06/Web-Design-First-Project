@@ -9,13 +9,13 @@
 </head>
 <body>
 
-    <!-- Header / Navbar -->
+<header>
     <nav class="navbar navbar-expand-lg" style="background-color: #019faab2;">
         <div class="container-fluid">
             <a class="navbar-brand ms-auto" href="#"> 
                 <img src="images/kpt_icon.png" alt="Logo" class="logo">
                 <img src="images/logo_politeknik.png" alt="Logo" class="logo">
-                <span class="navbar-name">POLITEKNIK SEBERANG PERAI</span>
+                <span class="navbar-name">UPROP JTMK</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -30,8 +30,9 @@
             </div>
         </div>
     </nav>
+</header>
 
-    <!-- Hero / Intro Section -->
+<main>
     <section class="hero-section text-center py-5">
         <h1>JTMK PSP</h1>
         <p class="lead">Jabatan Teknologi Maklumat dan Komunikasi bertanggungjawab untuk menyokong pembangunan dan penggunaan teknologi dalam organisasi.</p>
@@ -59,15 +60,17 @@
                 </div>
             </div>
 
-            <!-- Main Content (Two Info Boxes and Flowchart) -->
+            <!-- Two Info Boxes and Flowchart -->
             <div class="col-lg-9 col-md-8 col-12">
                 <!-- Info Maklumat Pelaksanaan Projek Pelajar -->
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">MATLAMAT PELAKSANAAN PROJEK AKHIR</h5>
+                        <p class="card-text">Pelaksanaan kursus Projek Akhir berfungsi sebagai platform untuk pelajar:</p>
                         <p class="card-text">• Mengembangkan potensi dan kebolehan profesional</p>
                         <p class="card-text">• Menghasilkan hasil kerja yang berkualiti dan bermakna</p>
                         <p class="card-text">• Mempraktikkan pengetahuan dan kemahiran yang telah dipelajari</p>
+                        <p class="card-text">Melalui kursus ini, pelajar diharap dapat meningkatkan keupayaan penyelesaian masalah secara kreatif dan kolaboratif ke arah melahirkan graduan yang kompeten, berdaya saing dan mempunyai kebolehpasaran tinggi.</p>
                     </div>
                 </div>
 
@@ -83,6 +86,7 @@
                                 <p class="card-text">•	Dokumentasi berkualiti(proposal, laporan akhir, logbook)</p>
                                 <p class="card-text">•	Pembentangan dan demonstrasi yang meyakinkan</p>
                                 <h5 class="card-title">NILAI TAMBAH KEPADA PELAJAR</h5>
+                                <p class="card-text">Sepanjang pelaksanaan Projek Akhir, pelajar akan membangunkan:</p>
                                 <p class="card-text">•	Kemahiran kerja berpasukan dan pengurusan masa</p>
                                 <p class="card-text">•	Komunikasi profesional dan pengurusan stakeholder</p>
                                 <p class="card-text">•	Refleksi kendiri, iterasi dan amalan continuous improvement</p>
@@ -91,13 +95,21 @@
                         </div>
                     </div>
 
-                    <!-- Flow / Timeline Process (Carta Alir Perlaksanaan Projek) -->
+                    <!-- Carta Alir Perlaksanaan Projek -->    
                     <div class="col-lg-6 col-md-12 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Carta Alir Perlaksanaan Projek</h5>
-                                <p class="card-text">Pelaksanaan Projek Akhir perlu mematuhi proses dan prosedur yang telah ditetapkan dalam kurikulum program. Carta alir pelaksanaan menunjukkan gambaran keseluruhan aliran kerja Projek Akhir sepanjang semester.</p>
-                                <img src="images/flowchart.png" alt="Flowchart" class="img-fluid">
+                        <div class="accordion" id="flowchartAccordion">
+                            <div class="accordion-item" style="background-color: #014f55; border-color: #014f55;">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #014f55; color: white; border-color: #014f55;">
+                                        <strong>Carta Alir Perlaksanaan Projek</strong>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#flowchartAccordion">
+                                    <div class="accordion-body" style="background-color: #014f55; color: white;">
+                                        <p>Pelaksanaan Projek Akhir perlu mematuhi proses dan prosedur yang telah ditetapkan dalam kurikulum program. Carta alir pelaksanaan menunjukkan gambaran keseluruhan aliran kerja Projek Akhir sepanjang semester.</p>
+                                        <img src="images/flowchart.png" alt="Flowchart" class="img-fluid">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -105,13 +117,11 @@
             </div>
         </div>
     </div>
+</main>
 
-    <!-- Footer -->
-    <footer class="text-center mt-5">
-        <div class="text-center p-3">
-            © 2026 - Copyright : Jabatan Teknologi Maklumat dan Komunikasi Politeknik Seberang Perai
-        </div>
-    </footer>
+<footer class="text-center mt-5">
+    <div class="text-center p-3">© 2026 - Copyright : Jabatan Teknologi Maklumat dan Komunikasi Politeknik Seberang Perai</div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
